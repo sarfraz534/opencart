@@ -8,18 +8,19 @@
 <include name="Master"></include>
 </run>
 </groups>
-
+<!-- 
 <listeners>
 <listener class-name="utilities.ExtentReportUtility"/>
 </listeners>
-
+-->
   <test thread-count="5" name="chrometest">
-  <parameter name="os" value="windows"></parameter>
-  <parameter name="browser" value="chrome"></parameter>
+ <parameter name="os" value="windows"/>
+  <parameter name="browser" value="chrome"/>
     <classes>
-     <class name="testCases.TC_001_AccountRegistrationTest"/> 
-     <!-- <class name="testCases.TC_002_LoginTest"></class>-->
+     <!-- <class name="testCases.TC_001_AccountRegistrationTest"/>-->
+   <!-- <class name="testCases.TC_002_LoginTest"/>-->
      <!-- <class name="testCases.LoginDataDrivenTest"></class>--> 
+     <class name="testCases.TC_003_search"/> 
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

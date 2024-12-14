@@ -64,6 +64,7 @@ public class BaseClass {
 		
 		
 		if(p.getProperty("execution_env").equalsIgnoreCase("local")) {
+			
 		switch(br.toLowerCase())
 		{
 		case "chrome": driver=new ChromeDriver(); break;

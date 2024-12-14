@@ -19,7 +19,12 @@ public class LoginDataDrivenTest extends BaseClass {
 	  logger.info("***Started LoginDataDrivenTest test**");
 	  //home page
 	  try {
-	  HomePage hp=new HomePage(driver);
+		  
+		  
+				HomePage hp= new HomePage(driver);
+				hp.set_search("iphone");
+				hp.click_search();
+	  //HomePage hp=new HomePage(driver);
 		hp.clickMyAccount();
 		hp.clickLogin(); //Login link under MyAccount
 		logger.info("clicked login buttom from myAccount dropdown in Home page ");
